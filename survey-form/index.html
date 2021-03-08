@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bicycle Survey Form</title>
+        <meta name="Description" content="A project for freeCodeCamp, this survey form asks questions about a person's bicycle riding behavior">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/normalize.css">
+        <link rel="icon" href="favicon.png"  type="image/png"> 
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1 id="title">Bicycle Survey Form</h1>
+            </header>
+            <main>
+                <p id="description">Please take this survey to describe to your bicycle habits and behaviors.</p>
+                <form id="survey-form">
+                    <fieldset class="section-fieldset">
+                        <legend><span class="number">1</span> Your basic info</legend>
+                        <label class="light" id="name-label" for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" placeholder="Joe or Jane" required>
+                        <label class="light" id="email-label"  for="email">Email:</label>
+                        <input type="email" id="email" name="user_email" placeholder="example@gmail.com" required>
+                        <label class="light" id="location-label"  for="location">Location:</label>
+                        <input type="text" id="location" name="user_location" placeholder="Pasadena, CA" required>
+                        <label class="light" id="number-label" for="number">Age:</label>
+                        <input type="number" id="number" name="user_age" min="18" max="115" placeholder="25" required>
+                    </fieldset>
+                    <fieldset class="section-fieldset">
+                        <legend><span class="number">2</span> Your biking behavior</legend>
+                        
+                        <label for="dropdown">How often do you bicycle?</label>
+                        <select id="dropdown" name="biking_frequency">
+                            <option value="">--Please choose an option--</option>
+                            <option value="5_to_7_times_a_week">5-7 times a week</option>
+                            <option value="2_to_4_times_a_week">2-4 times a week</option>
+                            <option value="once_a_week">At least once a week</option>
+                            <option value="once_a_month">At least once a month</option>
+                            <option value="once_a_year">At least once a year</option>
+                            <option value="more_than_a_year">More than a year ago</option>
+                        </select>
 
+
+                        <label>Why do you bike? [check all that apply]</label>
+                            <input type="checkbox" id="health" value="health_reason" name="user_reason">
+                            <label class="light" for="health">For health/exercise</label><br>
+                            <input type="checkbox" id="enjoyment" value="enjoyment_reason" name="user_reason">
+                            <label class="light" for="enjoyment">For enjoyment</label><br>
+                            <input type="checkbox" id="environmental" value="environmental_reason" name="user_reason">
+                            <label class="light" for="environmental">For environmental and/or social reasons</label><br>
+                            <input type="checkbox" id="work" value="work_reason" name="user_reason">
+                            <label class="light" for="work">To get to work</label><br>
+                            <input type="checkbox" id="school" value="school_reason" name="user_reason">
+                            <label class="light" for="school">To get to school</label><br>
+                            <input type="checkbox" id="transit" value="transit_reason" name="user_reason">
+                            <label class="light" for="transit">To get to public transit</label>
+
+                            <fieldset class="radio-fieldset">
+                                <legend>What is the average distance of your rides [one way]?</legend>
+                                <input type="radio" id="under_2_miles" value="under_2_miles" name="average_distance">
+                                <label class="light" for="under_2_miles">Under 2 miles</label> <br>
+                                <input type="radio" id="3_to_5_miles" value="3_to_5_miles" name="average_distance">
+                                <label class="light" for="3_to_5_miles">3 - 5 miles</label> <br>
+                                <input type="radio" id="6_to_10_miles" value="6_to_10_miles" name="average_distance">
+                                <label class="light" for="6_to_10_miles">6 - 10 miles</label> <br>
+                                <input type="radio" id="over_10" value="over_10" name="average_distance">
+                                <label class="light" for="over_10">Over 10 miles</label>
+                            </fieldset>
+                        
+                        <label for="improvements">What improvements could be made to make you bike more?</label>
+                        <textarea id="improvements" name="biking_improvements"></textarea>
+                    </fieldset>
+                    <button id="submit" type="submit">Submit</button>
+                </form>
+            </main>
+            <footer class="main-footer">
+                <p>Made with ❤️ by <a href="https://github.com/MihirMore">Mihir</a></p>
+            </footer>
+        </div>    
+    </body>
+</html>

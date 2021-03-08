@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #070a0a;
+}
+
+header, #description, .main-footer {
+    text-align: center;
+}
+
+header {
+    margin: 0 0 30px 0;
+}
+
+form {
+    max-width: 550px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #d8d6cc;
+    border-radius: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #fcfcfc;
+    color: #585b5e;
+    margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+#number {
+    width: 20%;
+    display: block;
+}
+
+select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+}
+
+button {
+    padding: 19px 39px 18px 39px;
+    color: rgb(255, 255, 255);
+    background-color: #097a2b;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #0ca039;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    border: none;
+
+}
+
+.section-fieldset {
+    margin-bottom: 30px;
+}
+
+.section-fieldset 
+legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.number {
+    background-color: #414141da;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 100%;
+}
+
+fieldset {
+    margin-top: 15px;
+    padding: 0;
+}
+
+label,
+.radio-fieldset legend {
+    font-size: 1em;
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+label.light {
+    display: inline;
+    font-weight: 300;
+}
