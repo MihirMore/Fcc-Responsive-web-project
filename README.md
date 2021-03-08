@@ -1,4 +1,4 @@
-# [freeCodeCamp](https://www.freecodecamp.org/) Responsive Web Design Projects
+## [freeCodeCamp](https://www.freecodecamp.org/) Responsive Web Design Projects
 
 ## Build a Tribute Page
 - [Project Description](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page)
