@@ -125,6 +125,14 @@ main {
   text-shadow: 2px 2px 1px #222;
 }
 
+#credit-photo {
+    
+        position: absolute;
+        top: 110%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+      
+}
 #step-one {
   background: linear-gradient(#1d1b1b, #2d2e2e);
   color:rgb(170, 170, 170);
