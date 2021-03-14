@@ -15,3 +15,6 @@
 - [Source Code](https://github.com/MihirMore/Fcc-Responsive-web-project/tree/main/product-landing-page)
 - [Live Version](https://mihirmore.github.io/Fcc-Responsive-web-project/product-landing-page/)
 
+## Build a Technical Document Page
+ - [Project Description:](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page)
+
