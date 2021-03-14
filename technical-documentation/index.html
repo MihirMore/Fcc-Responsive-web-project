@@ -161,6 +161,75 @@
                     </ul>
                 </article>
             </section>
+            <section id="JSON_Data_Types" class="main-section">
+                <header>
+                 <h2>JSON Data Types</h2>   
+                 <h3>Valid Data Types</h3>
+                </header>
+                <article>
+                    <p>In JSON, values must be one of the following data types:</p>
+                    <ul>
+                        <li> a string </li>
+                        <li> a number</li>  
+                        <li> an object (JSON object)</li>    
+                        <li> an array</li>    
+                        <li> a boolean</li>    
+                        <li> null</li>   
+                    </ul>
+                    <h3>JSON Strings</h3>
+                    <p>Strings in JSON must be written in double quotes.</p>
+                    <div class="example">
+                        <h4>Example: </h4>
+                        <code>
+                            { "name":"John" }
+                        </code>
+                    </div>
+                    <h3>JSON Numbers</h3>
+                    <p>Numbers in JSON must be an integer or a floating point.</p>
+                    <div class="example">
+                        <h4>Example: </h4>
+                        <code>
+                            { "age":30 }
+                        </code>
+                    </div>
+                    <h3>JSON Objects</h3>
+                    <p>Values in JSON can be objects.</p>
+                    <div class="example">
+                        <h4>Example: </h4>
+                        <code>
+                            {
+                                "employee":{ "name":"John", "age":30, "city":"New York" }
+                            }
+                        </code>
+                    </div>
+                    <h3>JSON Arrays</h3>
+                    <p>Values in JSON can be arrays.</p>
+                    <div class="example">
+                        <h4>Example: </h4>
+                        <code>
+                            {
+                                "employees":[ "John", "Anna", "Peter" ]
+                            }
+                        </code>
+                    </div>                    
+                    <h3>JSON Booleans</h3>
+                    <p>Values in JSON can be true/false.</p>
+                    <div class="example">
+                        <h4>Example: </h4>
+                        <code>
+                            { "sale":true }
+                        </code>
+                    </div>
+                    <h3>JSON null</h3>
+                    <p>Values in JSON can be null.</p>
+                    <div class="example">
+                        <h4>Example: </h4>
+                        <code>
+                            { "middlename":null }
+                        </code>
+                    </div>                    
+                </article>
+            </section>
         </main>
     </body>
 </html>
