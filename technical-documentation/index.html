@@ -230,6 +230,31 @@
                     </div>                    
                 </article>
             </section>
+            <section id="JSON_Parse" class="main-section">
+                <header>
+                    <h2>JSON.parse()</h2>
+                </header>
+                <article>
+                    <p>A common use of JSON is to exchange data to/from a web server. <br />
+
+                        When receiving data from a web server, the data is always a string.  <br />
+                        
+                        Parse the data with <code class="codespan">JSON.parse()</code>, and the data becomes a JavaScript object.
+                    </p>
+                    <div class="example">
+                        <h4>Example - Parsing JSON</h4>
+                        <p>Imagine we received this text from a web server:</p>
+                        <code>
+                            '{ "name":"John", "age":30, "city":"New York"}'
+                        </code>
+                        <p>Use the JavaScript function <code class="codespan">JSON.parse()</code> to convert text into a JavaScript object:</p>
+                        <code>
+                            var obj = JSON.parse('{ "name":"John", "age":30, "city":"New York"}');      
+                        </code>
+                        <p>Make sure the text is written in JSON format, or else you will get a syntax error.</p>
+                    </div>    
+                </article>
+            </section>
         </main>
     </body>
 </html>
