@@ -87,6 +87,62 @@
                     <p>JSON format was originally specified by <a href="https://www.crockford.com/isbn-13.html">Douglas Crockford</a></p> 
                 </article>
             </section>
+            <section id="JSON_Syntax" class="main-section">
+                <header>
+                    <h2>JSON Syntax</h2> <br />
+                    <h3>JSON Syntax Rules</h3>
+                </header>
+                <article>
+                    <ul>
+                        <li> Data is in name/value pairs</li>
+                        <li> Data is separated by commas</li>   
+                        <li> Curly braces hold objects </li>
+                        <li> Square brackets hold arrays</li>
+                    </ul>
+                    <p>JSON data is written as name/value pairs. A name/value pair consists of a field name (in double quotes), followed by a colon, followed by a value:</p>
+                    <div class="example">
+                        <h4>Example</h4>
+                        <code>
+                            "name" : "John"
+                        </code>
+                    </div>
+                </article>
+            </section>
+            <section id="JSON_XML" class="main-section">
+                <header>
+                    <h2>JSON vs XML</h2>
+                </header>
+                <article>
+                    <ul>
+                    <li> Both JSON and XML can be used to receive data from a web server.</li>                   
+                    </ul>
+                    <p> The following JSON and XML examples both define an employees object, with an array of 3 employees:</p>
+                    <div class="example">
+                        <h4>JSON Example</h4>
+                        <code>
+                            {"employees":[ <br />
+                                { "firstName":"John", "lastName":"Doe" }, <br />
+                                { "firstName":"Anna", "lastName":"Smith" }, <br />
+                                { "firstName":"Peter", "lastName":"Jones" } <br />
+                            ]}
+                        </code>
+                        <h4>XML Example</h4>
+                        <textarea rows="30" cols="28" style="border:none;">
+                            <employees> 
+                                <employee> 
+                                  <firstName>John</firstName> <lastName>Doe</lastName> 
+                                </employee>                                 
+                                <employee> 
+                                  <firstName>Anna</firstName> <lastName>Smith</lastName>  
+                                </employee>  
+                                <employee>   
+                                  <firstName>Peter</firstName> <lastName>Jones</lastName>  
+                                </employee> 
+                            </employees> 
+                        </textarea>                    
+                    </div>
+                </article>
+            </section>
         </main>
     </body>
 </html>
