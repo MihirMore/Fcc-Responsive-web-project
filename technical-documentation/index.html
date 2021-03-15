@@ -20,7 +20,9 @@
         gtag('config', 'G-GB9VJYJEJ6');
     </script>
 </head>
-
+<style>
+    textarea {padding: 2em; background-color: rgb(158, 157, 157);}
+</style>
 <body>
 
     <nav id="navbar">
@@ -82,7 +84,7 @@
             </header>
             <article>
                 <ul>
-                    <li>JSON <code class="codespan">JavaScript Object Notation.</code></li>
+                    <li>JSON : <code class="codespan">JavaScript Object Notation.</code></li>
                     <li>JSON <code class="codespan">is a syntax for storing and exchanging data.</code></li>
                     <li>JSON <code class="codespan">is text, written with JavaScript object notation.</code></li>
                     <li>JSON <code class="codespan">is a lightweight data-interchange format</code></li>
@@ -95,7 +97,7 @@
         </section>
         <section id="JSON_Syntax" class="main-section">
             <header>
-                <h2>JSON Syntax</h2> <br />
+                <h2>JSON Syntax</h2>
                 <h3>JSON Syntax Rules</h3>
             </header>
             <article>
@@ -127,15 +129,15 @@
                 </p>
                 <div class="example">
                     <h4>JSON Example</h4>
-                    <code>
+                    <code class="code-example">
                             {"employees":[ <br />
                                 { "firstName":"John", "lastName":"Doe" }, <br />
                                 { "firstName":"Anna", "lastName":"Smith" }, <br />
                                 { "firstName":"Peter", "lastName":"Jones" } <br />
                             ]}
-                        </code>
+                    </code>
                     <h4>XML Example</h4>
-                    <textarea rows="30" cols="28" style="border:none;">
+                    <textarea class="textarea" readonly rows="12" cols="70" style="border:none;">
                             <employees> 
                                 <employee> 
                                   <firstName>John</firstName> <lastName>Doe</lastName> 
@@ -188,7 +190,7 @@
                 <p>Strings in JSON must be written in double quotes.</p>
                 <div class="example">
                     <h4>Example: </h4>
-                    <code>
+                    <code class="code-example">
                             { "name":"John" }
                         </code>
                 </div>
@@ -196,7 +198,7 @@
                 <p>Numbers in JSON must be an integer or a floating point.</p>
                 <div class="example">
                     <h4>Example: </h4>
-                    <code>
+                    <code class="code-example">
                             { "age":30 }
                         </code>
                 </div>
@@ -204,7 +206,7 @@
                 <p>Values in JSON can be objects.</p>
                 <div class="example">
                     <h4>Example: </h4>
-                    <code>
+                    <code class="code-example">
                             {
                                 "employee":{ "name":"John", "age":30, "city":"New York" }
                             }
@@ -214,7 +216,7 @@
                 <p>Values in JSON can be arrays.</p>
                 <div class="example">
                     <h4>Example: </h4>
-                    <code>
+                    <code class="code-example">
                             {
                                 "employees":[ "John", "Anna", "Peter" ]
                             }
@@ -224,7 +226,7 @@
                 <p>Values in JSON can be true/false.</p>
                 <div class="example">
                     <h4>Example: </h4>
-                    <code>
+                    <code class="code-example">
                             { "sale":true }
                         </code>
                 </div>
@@ -232,7 +234,7 @@
                 <p>Values in JSON can be null.</p>
                 <div class="example">
                     <h4>Example: </h4>
-                    <code>
+                    <code class="code-example">
                             { "middlename":null }
                         </code>
                 </div>
@@ -253,12 +255,12 @@
                 <div class="example">
                     <h4>Example - Parsing JSON</h4>
                     <p>Imagine we received this text from a web server:</p>
-                    <code>
+                    <code class="code-example"> 
                             '{ "name":"John", "age":30, "city":"New York"}'
                         </code>
                     <p>Use the JavaScript function <code class="codespan">JSON.parse()</code> to convert text into a
                         JavaScript object:</p>
-                    <code>
+                    <code class="code-example">
                             var obj = JSON.parse('{ "name":"John", "age":30, "city":"New York"}');      
                         </code>
                     <p>Make sure the text is written in JSON format, or else you will get a syntax error.</p>
@@ -279,16 +281,16 @@
                 <h3>Stringify a JavaScript Object</h3>
                 <div class="example">
                     <p>Imagine we have this object in JavaScript: </p>
-                    <code>
+                    <code class="code-example">
                             var obj = { name: "John", age: 30, city: "New York" };
                         </code>
-                    <h3>Use the JavaScript function <code class="codespan">JSON.stringify()</code> to convert it into a
-                        string.</h3>
-                    <code>
+                    <h4>Use the JavaScript function <code class="codespan">JSON.stringify()</code> to convert it into a
+                        string.</h4>
+                    <code class="code-example">
                             var myJSON = JSON.stringify(obj);
                     </code>
                     <p>The result will be a string following the JSON notation.</p>
-                    <code>
+                    <code class="code-example">
                         var obj = { name: "John", age: 30, city: "New York" };
                         var myJSON = JSON.stringify(obj);
                         document.getElementById("demo").innerHTML = myJSON;
@@ -297,18 +299,18 @@
                     <p>It is also possible to stringify JavaScript arrays: <br />
                         Imagine we have this array in JavaScript:
                     </p>
-                    <code>
+                    <code class="code-example">
                         var arr = [ "John", "Peter", "Sally", "Jane" ];
                     </code>
                     <p>Use the JavaScript function JSON.stringify() to convert it into a string.</p>
-                    <code>
+                    <code class="code-example">
                         var myJSON = JSON.stringify(arr);
                     </code>
                     <p>The result will be a string following the JSON notation. <br />
 
                         myJSON is now a string, and ready to be sent to a server:
                     </p>
-                    <code>
+                    <code class="code-example">
                         var arr = [ "John", "Peter", "Sally", "Jane" ];
                         var myJSON = JSON.stringify(arr);
                         document.getElementById("demo").innerHTML = myJSON;
@@ -316,6 +318,9 @@
                 </div>
             </article>
         </section>
+        <footer class="main-footer">
+            <p>Made with ❤️ by <a href="https://github.com/MihirMore">Mihir</a></p>
+        </footer>
     </main>
     <script>
         const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox"]');
