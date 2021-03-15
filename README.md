@@ -18,6 +18,6 @@
 ## Build a Technical Document Page
  - [Project Description](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page)
  - [Source Code](https://github.com/MihirMore/Fcc-Responsive-web-project/tree/main/technical-documentation)
- - [Live Version](https://mihirmore.github.io/Fcc-Responsive-web-project/technical-documentation/)
+ - [Live Version](https://mihirmore.github.io/Fcc-Responsive-web-project/technical-documentation/) <br />
    This project is still in works so some features might not work. Full project coming soon :)
 
