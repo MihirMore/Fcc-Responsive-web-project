@@ -3,26 +3,26 @@
 }
 
 :root {
-    --body-bg: #f9fafa;
+    --body-bg: #eeeeea;
     --font-color: color: rgb(95, 95, 95);
-    --link-color: #3b49df;
-    --navbar-right-border: 1px solid rgb(148, 148, 148);
-    --navbar-top-border: 1px solid rgb(189, 189, 189);
-    --navbar-link-color: rgb(85, 85, 85);
-    --navbar-link-background-hover: rgb(214, 214, 214);
-    --codespan-color: rgb(211, 0, 42);
+    --link-color: #3140e0;
+    --navbar-right-border: 1px solid rgb(131, 131, 131);
+    --navbar-top-border: 1px solid rgb(175, 174, 174);
+    --navbar-link-color: rgb(71, 71, 71);
+    --navbar-link-background-hover: rgb(197, 197, 197);
+    --codespan-color: rgb(228, 23, 23);
     --codespan-bg-color: #e6e6e6; 
 }
 
 [data-theme="dark"] {
     --body-bg: rgb(0, 0, 0);
     --font-color: rgb(217,217,217);
-    --link-color: rgb(27, 149, 224);;
-    --navbar-right-border: 1px solid rgb(49, 52, 54);;
-    --navbar-top-border: 1px solid rgb(47, 50, 53);;
-    --navbar-link-color: rgb(217,217,217);
+    --link-color: rgb(27, 89, 224);;
+    --navbar-right-border: 1px solid rgb(44, 46, 48);;
+    --navbar-top-border: 1px solid rgb(43, 45, 48);;
+    --navbar-link-color: rgb(207, 207, 207);
     --navbar-link-background-hover: rgb(37, 37, 37);
-    --codespan-color: crimson;
+    --codespan-color: rgb(231, 39, 39);
     --codespan-bg-color: rgb(21, 24, 28);;
 }
 
@@ -60,6 +60,7 @@ body {
 
 #navbar li {
     border-top: var(--navbar-top-border);
+    font-size: 1.2em;
 }
 
 #navbar li:hover {
@@ -77,7 +78,8 @@ body {
     margin-left: 300px;
     padding-top: 25px;
     padding-left: 35px;
-    line-height: 1.5;
+    line-height: 1.8;
+    font-size: larger;
 }
 
 #main-doc h1 {
@@ -91,7 +93,7 @@ body {
 
 .theme-toggle-wrapper em {
     margin-left: 10px;
-    font-size: 1rem;    
+    font-size: 1.1rem;    
 }
 
 .toggle-switch {
@@ -153,11 +155,11 @@ a {
 }
 
 .main-section h2 {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .main-section h3 {
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .codespan {
@@ -169,6 +171,9 @@ a {
     font-family: Consolas, "courier new";
 }
 
+.code-example{
+    font-size: .8em;
+}
 .main-footer {
     text-align: center;
     margin-top: 35px
