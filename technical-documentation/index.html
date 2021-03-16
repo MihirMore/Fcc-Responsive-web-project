@@ -318,6 +318,58 @@
                 </div>
             </article>
         </section>
+        <section id="JSON_Objects" class="main-section">
+            <header>
+                <h2>JSON Objects</h2>
+            </header>
+            <article>
+                <h3>Object Syntax</h3>
+                <div class="example">
+                    <h3>Example: </h3>
+                    <code>
+                        { "name":"John", "age":30, "car":null }
+                    </code>
+                    <p>JSON objects are surrounded by curly braces {}. <br />
+
+                        JSON objects are written in key/value pairs. <br />
+                        
+                        Keys must be strings, and values must be a valid JSON data type (string, number, object, array, boolean or null). <br />
+                        
+                        Keys and values are separated by a colon. <br />
+                        
+                        Each key/value pair is separated by a comma.
+                    </p>
+                    <h3>Accessing Object Values </h3>
+                    <p>You can access the object values by using dot (.) notation:</p>
+                    <h3>Example: </h3>
+                    <code>
+                        myObj = { "name":"John", "age":30, "car":null }; <br />
+                        x = myObj.name;
+                    </code>
+                    <h3>Nested JSON Objects</h3>
+                    <p>Values in a JSON object can be another JSON object.</p>
+                    <h3>Example: </h3>
+                    <code>
+                        myObj = {
+                            "name":"John",
+                            "age":30,
+                            "cars": {
+                              "car1":"Ford",
+                              "car2":"BMW",
+                              "car3":"Fiat"
+                            }
+                           }
+                    </code>
+                    <p>You can access nested JSON objects by using the dot notation or bracket notation:</p>
+                    <h3>Example: </h3>
+                    <code>
+                        x = myObj.cars.car2;
+                        // or:
+                        x = myObj.cars["car2"];
+                    </code>
+                </div>
+            </article>
+        </section>
         <footer class="main-footer">
             <p>Made with ❤️ by <a href="https://github.com/MihirMore">Mihir</a></p>
         </footer>
