@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/style.css">
-    
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GB9VJYJEJ6"></script>
@@ -21,8 +21,12 @@
     </script>
 </head>
 <style>
-    textarea {padding: 2em; background-color: rgb(158, 157, 157);}
+    textarea {
+        padding: 2em;
+        background-color: rgb(158, 157, 157);
+    }
 </style>
+
 <body>
 
     <nav id="navbar">
@@ -255,7 +259,7 @@
                 <div class="example">
                     <h4>Example - Parsing JSON</h4>
                     <p>Imagine we received this text from a web server:</p>
-                    <code class="code-example"> 
+                    <code class="code-example">
                             '{ "name":"John", "age":30, "city":"New York"}'
                         </code>
                     <p>Use the JavaScript function <code class="codespan">JSON.parse()</code> to convert text into a
@@ -332,11 +336,12 @@
                     <p>JSON objects are surrounded by curly braces {}. <br />
 
                         JSON objects are written in key/value pairs. <br />
-                        
-                        Keys must be strings, and values must be a valid JSON data type (string, number, object, array, boolean or null). <br />
-                        
+
+                        Keys must be strings, and values must be a valid JSON data type (string, number, object, array,
+                        boolean or null). <br />
+
                         Keys and values are separated by a colon. <br />
-                        
+
                         Each key/value pair is separated by a comma.
                     </p>
                     <h3>Accessing Object Values </h3>
@@ -383,11 +388,12 @@
                 <p>Arrays in JSON are almost the same as arrays in JavaScript. <br />
 
                     In JSON, array values must be of type string, number, object, array, boolean or null.<br />
-                    
-                    In JavaScript, array values can be all of the above, plus any other valid JavaScript expression, including functions, dates, and undefined.
-                </p>                
-            </div>  
-            <h3>Arrays in JSON Objects</h3>     
+
+                    In JavaScript, array values can be all of the above, plus any other valid JavaScript expression,
+                    including functions, dates, and undefined.
+                </p>
+            </div>
+            <h3>Arrays in JSON Objects</h3>
             <p>Arrays can be values of an object property: </p>
             <div class="example">
                 <h3>Example: </h3>
@@ -426,6 +432,80 @@
                 </code>
             </div>
         </section>
+        <section id="JSON_PHP" class="main-section">
+            <header>
+                <h2>JSON PHP</h2>
+            </header>
+            <article>
+                <p>A common use of JSON is to read data from a web server, and display the data in a web page. <br />
+
+                    This chapter will teach you how to exchange JSON data between the client and a PHP server.
+                </p>
+                <h3>PHP File</h3>
+                <p>PHP has some built-in functions to handle JSON. <br />
+
+                    Objects in PHP can be converted into JSON by using the PHP function <code class="codespan">json_encode():</code>
+                </p>
+                <div class="example">
+                    <h3>Example:</h3>
+                    <code>
+                        &lt;?php
+                        $myObj->name = "John"; <br />
+                        $myObj->age = 30; <br />
+                        $myObj->city = "New York"; <br />
+                        $myJSON = json_encode($myObj); <br />
+                        echo $myJSON; <br />
+                        ?>
+                    </code>
+                    <h3>The Client Javascript</h3>
+                    <p>Here is a JavaScript on the client, using an AJAX call to request the PHP file from the example above: </p>
+                    <h3>Example: </h3>
+                    <p>Use JSON.parse() to convert the result into a JavaScript object: </p>
+                    <code>
+                        xmlhttp.onreadystatechange = function() { <br />
+                            if (this.readyState == 4 && this.status == 200) { <br />
+                              var myObj = JSON.parse(this.responseText); <br />
+                              document.getElementById("demo").innerHTML = myObj.name; <br />
+                            } <br />
+                          };<br />
+                          xmlhttp.open("GET", "demo_file.php", true);<br />
+                          xmlhttp.send();
+                    </code>
+                </div>
+            </article>
+        </section>
+        <section id="JSON_HTML"class="main-section">
+            <h2>JSON HTML</h2>
+            <p>JSON can very easily be translated into JavaScript.<br />
+
+                JavaScript can be used to make HTML in your web pages.</p>
+                <article>
+                    <h3>HTML Table </h3>
+                    <p> Make an HTML table with data received as JSON:</p>
+                    <div class="example">
+                        <h3>Example: </h3>
+                        <code>
+                            obj = { table: "customers", limit: 20 }; <br />
+                            dbParam = JSON.stringify(obj); <br />
+                            xmlhttp = new XMLHttpRequest(); <br />
+                            xmlhttp.onreadystatechange = function() { <br />
+                            if (this.readyState == 4 && this.status == 200) { <br />
+                            myObj = JSON.parse(this.responseText); <br />
+                            txt += "<table border='1'>" <br />
+                            for (x in myObj) { <br />
+                            txt += "<tr><td>" + myObj[x].name + "</td></tr>"; <br />
+                            } <br />
+                            txt += "</table>" <br />
+                            document.getElementById("demo").innerHTML = txt; <br />
+                            }<br />
+                            }<br />
+                            xmlhttp.open("POST", "json_demo_db_post.php", true);  <br />
+                            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded"); <br />
+                            xmlhttp.send("x=" + dbParam); <br />
+                        </code>
+                    </div>
+                </article>
+        </section>
         <footer class="main-footer">
             <p>Made with ❤️ by <a href="https://github.com/MihirMore">Mihir</a></p>
         </footer>
@@ -436,12 +516,12 @@
         function switchTheme(e) {
             if (e.target.checked) {
                 document.documentElement.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark'); 
+                localStorage.setItem('theme', 'dark');
             }
             else {
                 document.documentElement.setAttribute('data-theme', 'light');
                 localStorage.setItem('theme', 'light');
-            }    
+            }
         }
 
         toggleSwitch.addEventListener('change', switchTheme, false);
@@ -455,6 +535,7 @@
                 toggleSwitch.checked = true;
             }
         }
-    </script> 
+    </script>
 </body>
+
 </html>
