@@ -1,0 +1,166 @@
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {    
+    margin: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 3em;
+  padding-bottom: 0.5em;
+  border-bottom: rgb(158, 158, 158) 1px solid;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: .5em;
+	padding-bottom: .5em;
+  position: fixed; 
+  top: 0; 
+  background: #464747;
+  width: 100%;
+}
+
+#navbar li {
+  padding: 10px 15px;
+}
+
+#navbar a {
+  color: #dad8d8;
+}
+
+#navbar a:hover {
+  color: #ffffff;
+}
+
+#projects a {
+  color: #06c;
+}
+
+#projects a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* ---- Layout Containers ---- */
+main {
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+#welcome-section {
+  display: flex;
+  height: 100vh;
+}
+
+/* ---- Page Elements ---- */
+
+#welcome-text {
+    margin: auto;
+    width: 75%;
+    text-align: center;
+
+}
+
+#self-description {
+  font-size: 1.25em;
+  line-height: 2;
+}
+
+.project-description {
+  line-height: 1.5;
+}
+
+.project-icon {
+  width: 100px;
+  height: auto;
+  border-radius: 100%;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, .2);;
+}
+
+.social-icon {
+  width: 50px;
+  margin: 0 15px 25px 15px;
+  padding-top: 5px;
+}
+
+.social-icon-linkedin {
+    width: 35px ;
+    padding-top: 0px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	#main {
+		width: 0%;
+		margin: 0 auto;
+  }
+  
+  #navbar ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #welcome-text {
+    font-size: 150%;
+  }
+
+  #projects {
+    display: flex
+  }
+
+  .project-tile {
+    flex: 1;
+    padding-right: 1em;
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-tile a {
+    margin-top: auto;
+  }
+}
+@media (min-width: 1025px) {
+  #main {
+		width: 80%;
+		max-width: 1150px;
+	}
+}
