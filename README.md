@@ -21,5 +21,5 @@
  - [Live Version](https://mihirmore.github.io/Fcc-Responsive-web-project/technical-documentation/) 
  
  ## Build a Personal Portfolio Website
-  -[Project Description](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage)
+  - [Project Description](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage)
    
