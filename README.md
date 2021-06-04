@@ -23,5 +23,5 @@
  ## Build a Personal Portfolio Website
   - [Project Description](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage)
   - [Source Code](https://github.com/MihirMore/Fcc-Responsive-web-project/tree/main/personal-portfolio)
-  - [Live Version](https://mihirmore.github.io/Fcc-Responsive-web-project/personal-portfolio/)
+  - [Live Version](https://mihirmore.github.io/Fcc-Responsive-web-project/Personal_Website/)
    
