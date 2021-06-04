@@ -164,12 +164,9 @@ hr {
     margin: 10px 20px;
     font-size: 18px;    
     font-family: 'Montserrat', sans-serif; 
+    color: rgb(35,9,150);
     font-weight: bold;
     text-decoration: none;
-}
-
-.a {
-    color: #150464;
 }
 
 .footer-link:hover {
