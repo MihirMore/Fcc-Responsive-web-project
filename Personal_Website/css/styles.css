@@ -162,11 +162,14 @@ hr {
 
 .footer-link {
     margin: 10px 20px;
-    font-size: 18px;
-    color: #150464;
+    font-size: 18px;    
     font-family: 'Montserrat', sans-serif; 
     font-weight: bold;
     text-decoration: none;
+}
+
+.a {
+    color: #150464;
 }
 
 .footer-link:hover {
